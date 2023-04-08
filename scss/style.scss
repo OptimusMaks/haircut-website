@@ -1,0 +1,117 @@
+@import url("../fonts/fonts.css");
+
+$mainbg: #faeee9;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font: 400 24px "inter", sans-serif;
+}
+
+header {
+  background: #f9e3d3;
+  padding-bottom: 150px;
+}
+
+main {
+  background: $mainbg;
+}
+
+footer {
+  background: #fbe9db;
+}
+
+.content {
+  max-width: 1070px;
+  margin: 0 auto;
+}
+
+.button {
+  width: 270px;
+  line-height: 59px;
+  background: #f89d88;
+  border-radius: 30px;
+  color: #fbe9db;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: "Yeseva One";
+  font-size: 43px;
+  line-height: 53px;
+  letter-spacing: 0.15em;
+}
+
+@mixin bflex {
+  display: flex;
+  justify-content: space-between;
+}
+
+@import "navigation";
+
+@import "head";
+
+@import "about";
+
+@import "services";
+
+@import "block_2";
+
+@import "team";
+
+@import "feedback";
+
+footer {
+  .content {
+    display: flex;
+    align-items: flex-start;
+  }
+  .image {
+    margin-top: 114px;
+  }
+
+  .last__info {
+    margin-left: 22px;
+    margin-top: 114px;
+
+    &__title {
+      font-family: "yeseva";
+      font-size: 43px;
+      letter-spacing: 0.15em;
+      margin-bottom: 32px;
+    }
+
+    .headlings {
+      font-family: "inter";
+      font-weight: 700;
+      font-size: 26px;
+      letter-spacing: 0.02em;
+      margin-bottom: 32px;
+    }
+
+    .headlings__text {
+      font-family: "inter";
+      font-weight: 300;
+      font-size: 26px;
+      letter-spacing: 0.02em;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .content {
+    max-width: 381px;
+    overflow: hidden;
+  }
+}

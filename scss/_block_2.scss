@@ -1,0 +1,35 @@
+.block_2 {
+  display: flex;
+  margin-top: 275px;
+
+  &__image {
+  }
+
+  &__stocks {
+    display: flex;
+    flex-direction: column;
+    margin-left: 94px;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 43px;
+    margin-bottom: 31px;
+    letter-spacing: 0.15em;
+  }
+
+  &__sales {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    margin-bottom: 43px;
+    background: rgba(248, 157, 136, 0.25);
+    border-radius: 20px;
+    width: 588px;
+    height: 45px;
+    padding: 10px 0;
+    padding-left: 8px;
+  }
+}

@@ -1,0 +1,42 @@
+.about {
+  @include bflex();
+  column-gap: 37px;
+
+  &__image {
+    border-radius: 20px;
+  }
+
+  &__info {
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    font-weight: 300;
+  }
+
+  &__features {
+    letter-spacing: 0.03em;
+    list-style: none;
+  }
+
+  &__feature {
+    $size: 19px;
+    position: relative;
+    padding-left: 12px + $size;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: $size;
+      height: $size;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #807979;
+      border-radius: 50%;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@mixin bflex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.head {
+  @include bflex();
+  align-items: center;
+
+  &__text {
+    letter-spacing: 0.15em;
+    color: #2c1708;
+  }
+
+  &__title {
+    font-family: "yeseva";
+    font-size: 45px;
+    line-height: 53px;
+    margin-bottom: 30px;
+  }
+
+  &__slogan {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  &__discont {
+    font-size: 22px;
+    line-height: 38px;
+    margin-bottom: 30px;
+  }
+}

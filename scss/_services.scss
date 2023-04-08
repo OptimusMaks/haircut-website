@@ -1,0 +1,74 @@
+@mixin bflex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services {
+  margin-top: 273px;
+  &__title {
+    margin-bottom: 12px;
+    font-family: "Yeseva One";
+  }
+
+  &__categories {
+    @include bflex();
+    font-family: "Inter";
+  }
+
+  &__category {
+  }
+
+  &__options {
+    display: flex;
+    margin-bottom: 30px;
+    font-family: "Inter";
+  }
+
+  &__option {
+    margin-right: 32px;
+  }
+
+  &__info {
+    @include bflex();
+    column-gap: 15px;
+    align-items: center;
+  }
+
+  &__prices {
+    flex-grow: 1;
+    font-size: 18px;
+  }
+
+  &__price {
+    @include bflex();
+    margin-bottom: 10px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 0;
+      border-top: 1px dashed #000;
+      left: 0;
+      bottom: 4px;
+    }
+  }
+
+  &__name {
+    background: $mainbg;
+    z-index: 1;
+    font-family: "yeseva";
+    letter-spacing: 0.15em;
+  }
+
+  &__value {
+    background: $mainbg;
+    z-index: 1;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+  }
+
+  &__image {
+  }
+}

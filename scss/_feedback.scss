@@ -1,0 +1,33 @@
+.feedback {
+  &__title {
+    font-family: "yeseva";
+    font-size: 43px;
+    letter-spacing: 0.15em;
+    margin-top: 283px;
+    margin-bottom: 46px;
+  }
+
+  &__group {
+    display: flex;
+  }
+
+  &__group__text {
+    margin-left: 28px;
+    margin-bottom: 40px;
+  }
+
+  &__group__text__name {
+    font-family: "inter";
+    font-weight: 500;
+  }
+
+  &__group__text__text {
+    font-family: "inter";
+    margin-bottom: 114px;
+  }
+
+  &__group__image {
+    margin-bottom: 36px;
+    margin-bottom: 114px;
+  }
+}

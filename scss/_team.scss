@@ -1,0 +1,29 @@
+.team {
+  margin-top: 269px;
+  &__title {
+    font-family: "yeseva";
+    font-size: 43px;
+    letter-spacing: 0.15em;
+    margin-bottom: 57px;
+  }
+
+  &__personal {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__personal__women_name {
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+
+  &__personal__women_post {
+    font-family: "Inter";
+    font-weight: 300;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+}
